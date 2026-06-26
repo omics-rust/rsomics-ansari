@@ -1,0 +1,33 @@
+[package]
+name = "rsomics-ansari"
+version = "0.1.0"
+description = "Ansari-Bradley two-sample scale test (exact + normal approximation) — scipy.stats.ansari equivalent, value-exact"
+edition = "2024"
+rust-version = "1.91"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/omics-rust/rsomics-ansari"
+authors = ["Zane Leong <efd@live.com>"]
+categories = ["science", "command-line-utilities"]
+keywords = ["statistics", "ansari-bradley", "scipy", "nonparametric", "bioinformatics"]
+readme = "README.md"
+
+[[bin]]
+name = "rsomics-ansari"
+path = "src/main.rs"
+
+[lib]
+name = "rsomics_ansari"
+path = "src/lib.rs"
+doctest = false
+
+[dependencies]
+rsomics-common = { version = "0.6", features = ["rayon"] }
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+
+[dev-dependencies]
+criterion = { version = "0.7", default-features = false, features = ["cargo_bench_support"] }
+
+[[bench]]
+name = "ansari"
+harness = false

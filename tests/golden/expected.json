@@ -1,0 +1,104 @@
+[
+  {
+    "name": "exact_small",
+    "n": 7,
+    "m": 5,
+    "two-sided": {
+      "statistic": 27.0,
+      "pvalue": 0.5252525252525253
+    },
+    "less": {
+      "statistic": 27.0,
+      "pvalue": 0.26262626262626265
+    },
+    "greater": {
+      "statistic": 27.0,
+      "pvalue": 0.8333333333333334
+    }
+  },
+  {
+    "name": "exact_mid",
+    "n": 30,
+    "m": 25,
+    "two-sided": {
+      "statistic": 345.0,
+      "pvalue": 0.004878888147023195
+    },
+    "less": {
+      "statistic": 345.0,
+      "pvalue": 0.9978201790338515
+    },
+    "greater": {
+      "statistic": 345.0,
+      "pvalue": 0.0024394440735115977
+    }
+  },
+  {
+    "name": "normal_nolties",
+    "n": 60,
+    "m": 60,
+    "two-sided": {
+      "statistic": 1419.0,
+      "pvalue": 1.597253229216668e-05
+    },
+    "less": {
+      "statistic": 1419.0,
+      "pvalue": 0.9999920137338539
+    },
+    "greater": {
+      "statistic": 1419.0,
+      "pvalue": 7.98626614608334e-06
+    }
+  },
+  {
+    "name": "normal_ties_even",
+    "n": 10,
+    "m": 10,
+    "two-sided": {
+      "statistic": 56.5,
+      "pvalue": 0.8462840548259402
+    },
+    "less": {
+      "statistic": 56.5,
+      "pvalue": 0.4231420274129701
+    },
+    "greater": {
+      "statistic": 56.5,
+      "pvalue": 0.57685797258703
+    }
+  },
+  {
+    "name": "normal_ties_odd",
+    "n": 7,
+    "m": 6,
+    "two-sided": {
+      "statistic": 25.0,
+      "pvalue": 0.7421942908266814
+    },
+    "less": {
+      "statistic": 25.0,
+      "pvalue": 0.6289028545866593
+    },
+    "greater": {
+      "statistic": 25.0,
+      "pvalue": 0.3710971454133407
+    }
+  },
+  {
+    "name": "exact_odd",
+    "n": 7,
+    "m": 4,
+    "two-sided": {
+      "statistic": 20.0,
+      "pvalue": 0.3878787878787879
+    },
+    "less": {
+      "statistic": 20.0,
+      "pvalue": 0.8939393939393939
+    },
+    "greater": {
+      "statistic": 20.0,
+      "pvalue": 0.19393939393939394
+    }
+  }
+]
