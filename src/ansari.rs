@@ -41,6 +41,15 @@ pub fn ansari(x: &[f64], y: &[f64], alternative: Alternative) -> Result<AnsariRe
         ));
     }
 
+    // SciPy propagates NaN (nan_policy='propagate'): any NaN in either sample
+    // yields nan/nan. Infinities are ordinary orderable values and are kept.
+    if x.iter().chain(y).any(|v| v.is_nan()) {
+        return Ok(AnsariResult {
+            statistic: f64::NAN,
+            pvalue: f64::NAN,
+        });
+    }
+
     let big_n = n + m;
     let mut pooled: Vec<(f64, bool)> = Vec::with_capacity(big_n);
     pooled.extend(x.iter().map(|&v| (v, true)));

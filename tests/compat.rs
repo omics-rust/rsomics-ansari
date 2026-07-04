@@ -65,6 +65,16 @@ fn matches_scipy_golden() {
 
             let got = ansari(&x, &y, alt).unwrap();
 
+            if want_stat.is_nan() {
+                assert!(
+                    got.statistic.is_nan() && got.pvalue.is_nan(),
+                    "{name}/{alt_name}: expected nan/nan, got {}/{}",
+                    got.statistic,
+                    got.pvalue
+                );
+                continue;
+            }
+
             assert!(
                 (got.statistic - want_stat).abs() < 1e-9,
                 "{name}/{alt_name}: AB {} vs scipy {want_stat}",

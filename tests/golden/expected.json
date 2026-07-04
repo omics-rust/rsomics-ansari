@@ -100,5 +100,56 @@
       "statistic": 20.0,
       "pvalue": 0.19393939393939394
     }
+  },
+  {
+    "name": "nan_in_x",
+    "n": 3,
+    "m": 3,
+    "two-sided": {
+      "statistic": nan,
+      "pvalue": nan
+    },
+    "less": {
+      "statistic": nan,
+      "pvalue": nan
+    },
+    "greater": {
+      "statistic": nan,
+      "pvalue": nan
+    }
+  },
+  {
+    "name": "nan_in_y",
+    "n": 3,
+    "m": 3,
+    "two-sided": {
+      "statistic": nan,
+      "pvalue": nan
+    },
+    "less": {
+      "statistic": nan,
+      "pvalue": nan
+    },
+    "greater": {
+      "statistic": nan,
+      "pvalue": nan
+    }
+  },
+  {
+    "name": "inf_in_x",
+    "n": 3,
+    "m": 3,
+    "two-sided": {
+      "statistic": 5.0,
+      "pvalue": 0.6
+    },
+    "less": {
+      "statistic": 5.0,
+      "pvalue": 0.9
+    },
+    "greater": {
+      "statistic": 5.0,
+      "pvalue": 0.3
+    }
   }
 ]
